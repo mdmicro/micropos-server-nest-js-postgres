@@ -1,0 +1,12 @@
+GET http://localhost:3000/companies
+
+### 
+
+POST http://localhost:3000/companies
+Content-Type: application/json
+
+{
+  "name": "Google",
+  "domain": "www.google.com",
+  "description": "Search Engine App"
+}
