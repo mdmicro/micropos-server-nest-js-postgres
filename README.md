@@ -2,7 +2,7 @@
 
 ## Description
 
-CRUD system developed with Nest/Typescript with a PostgreSQL database.
+CRUD system developed with Nest/Typescript with TypeORM and PostgreSQL database.
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
