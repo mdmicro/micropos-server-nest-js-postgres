@@ -6,12 +6,12 @@ export class Cashregister extends BaseEntity {
   @Column({ type: 'varchar', length: 100, nullable: false, unique: true })
   cashregister_name: string
 
-  @Column({ type: 'varchar', length: 100, nullable: false })
-  system_nalog: string
-
-  @Column({ type: 'varchar', length: 12, nullable: false, unique: true })
+  @Column({ type: 'varchar', length: 20, nullable: true, unique: true })
   serial_number: string
 
   @Column({ type: 'integer', nullable: false, default: null })
-  companie_uuid: number
+  companie_id: number
+
+  @Column({ type: 'varchar', length: 255, nullable: true, unique: false })
+  description: string
 }
