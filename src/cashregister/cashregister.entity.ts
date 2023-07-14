@@ -6,7 +6,7 @@ export class Cashregister extends BaseEntity {
   @Column({ type: 'varchar', length: 100, nullable: false, unique: true })
   cashregister_name: string
 
-  @Column({ type: 'varchar', length: 20, nullable: true, unique: true })
+  @Column({ type: 'varchar', length: 20, nullable: true, unique: false })
   serial_number: string
 
   @Column({ type: 'integer', nullable: true, default: null })

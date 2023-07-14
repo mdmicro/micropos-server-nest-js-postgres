@@ -7,10 +7,11 @@ import { config } from './orm.config'
 import { CompaniesModule } from './companies/companies.module'
 import { CashregisterModule } from './cashregister/cashregister.module'
 import { ProductModule } from './product/product.module'
+import { CategoryProductModule } from './categoryProduct/categoryProduct.module'
 import { TerminalModule } from './terminal/terminal.module'
 
 @Module({
-	imports: [TypeOrmModule.forRoot(config), CompaniesModule, CashregisterModule, ProductModule, TerminalModule],
+	imports: [TypeOrmModule.forRoot(config), CompaniesModule, CashregisterModule, ProductModule, TerminalModule, CategoryProductModule],
 	controllers: [AppController],
 	providers: [AppService],
 })
