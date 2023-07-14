@@ -27,8 +27,8 @@ export class Product extends BaseEntity {
   @Column({ type: 'varchar', length: 255, nullable: true, unique: false })
   image_uuid: string
 
-  @Column({ type: 'varchar', length: 255, nullable: true, unique: false })
-  category_uuid: string
+  @Column({ type: 'integer', nullable: true, default: null })
+  category_uuid: number
 
   /** договор поставки */
   @Column({ type: 'varchar', length: 255, nullable: true, unique: false })
