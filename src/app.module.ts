@@ -10,9 +10,10 @@ import { ProductModule } from './product/product.module'
 import { CategoryProductModule } from './categoryProduct/categoryProduct.module'
 import { TerminalModule } from './terminal/terminal.module'
 import { ImageModule } from './image/image.module'
+import { ImageUploadModule } from './imageUpload/imageUpload.module'
 
 @Module({
-	imports: [TypeOrmModule.forRoot(config), CompaniesModule, CashregisterModule, ProductModule, TerminalModule, CategoryProductModule, ImageModule],
+	imports: [TypeOrmModule.forRoot(config), CompaniesModule, CashregisterModule, ProductModule, TerminalModule, CategoryProductModule, ImageModule, ImageUploadModule],
 	controllers: [AppController],
 	providers: [AppService],
 })
