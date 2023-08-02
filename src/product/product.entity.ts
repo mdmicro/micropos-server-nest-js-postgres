@@ -24,8 +24,8 @@ export class Product extends BaseEntity {
   @Column({ type: 'varchar', length: 255, nullable: true, unique: false })
   description: string
 
-  @Column({ type: 'integer', nullable: true, unique: false, default: null})
-  image_uuid: number
+  @Column({ type: 'varchar', length: 255, nullable: true, unique: true })
+  image_file_name: string
 
   @Column({ type: 'integer', nullable: true, default: null })
   category_uuid: number
