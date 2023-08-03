@@ -1,14 +1,8 @@
 import { Controller, Get, Param, Post, Res, UploadedFile, UseInterceptors } from '@nestjs/common'
-import { Crud, CrudController } from '@nestjsx/crud'
+import { CrudController } from '@nestjsx/crud'
 import { ImageUpload } from './imageUpload.entity'
 import { ImageUploadService } from './imageUpload.service'
 import { FileInterceptor } from '@nestjs/platform-express'
-//
-// @Crud({
-// 	model: {
-// 		type: ImageUpload
-// 	}
-// })
 
 @Controller('imageUpload')
 export class ImageUploadController implements CrudController <ImageUpload> {
@@ -19,7 +13,6 @@ export class ImageUploadController implements CrudController <ImageUpload> {
 		FileInterceptor('file'),
 	)
 	async uploadedFile(@UploadedFile() file) {
-		console.log(file)
 		const response = {
 			originalname: file.originalname,
 			filename: file.filename,
