@@ -9,6 +9,7 @@ import { CashregisterModule } from './cashregister/cashregister.module'
 import { ProductModule } from './product/product.module'
 import { CategoryProductModule } from './categoryProduct/categoryProduct.module'
 import { TerminalModule } from './terminal/terminal.module'
+import { ImageUploadModule } from './imageUpload/imageUpload.module'
 import { PrinterModule } from './printer/printer.module'
 
 @Module({
@@ -20,6 +21,7 @@ import { PrinterModule } from './printer/printer.module'
 		TerminalModule,
 		CategoryProductModule,
 		PrinterModule,
+		ImageUploadModule,
 	],
 	controllers: [AppController],
 	providers: [AppService],
